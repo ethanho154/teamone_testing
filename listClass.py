@@ -31,7 +31,7 @@ class listOb:
         :returns: Addition of values in list
         :raises ValueError: If list_var is empty
         :raises ImportError: If numpy or numbers not installed in environment
-        :raises TypeError: If element in list_var is not an int, float, or complex
+        :raises TypeError: If element in list is not an int, float, or complex
         """
 
         np = self.import_modules()
@@ -85,7 +85,7 @@ class listOb:
         :returns: Largest difference between two adjacent numbers
         :raises ValueError: If my_list has 0 or 1 elements
         :raises ImportError: If numpy is not installed in environment
-        :raises TypeError: If element in my_list is not an int, float, or complex
+        :raises TypeError: If element in list is not an int, float, or complex
         """
 
         logging.basicConfig(filename='log.txt', level=logging.DEBUG)
