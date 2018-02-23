@@ -104,6 +104,7 @@ class listOb:
                 if diff > n:
                     n = diff
             else:
-                raise TypeError('List elements must be int, float, or complex!')
+                raise TypeError(
+                    'List elements must be int, float, or complex!')
         logging.debug('Returns %s', str(n))
         self.maxDiff = n
