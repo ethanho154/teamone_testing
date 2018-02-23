@@ -103,8 +103,7 @@ class listOb:
                 diff = abs(self.myList[i + 1] - self.myList[i])
                 if diff > n:
                     n = diff
-                else:
-                    raise TypeError(
-                        'List elements must be int, float, or complex!')
+            else:
+                raise TypeError('List elements must be int, float, or complex!')
         logging.debug('Returns %s', str(n))
         self.maxDiff = n
